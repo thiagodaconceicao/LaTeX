@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{hyperref}
+
+\title{Conjuntos Numéricos}
+\author{Thiago da Conceição}
+\date{}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\B}{\mathbb{B}}
+
+\begin{document}
+\maketitle
+
+\section{Definição Informal}
+\begin{alignat*}{2}
+\text{Números Naturais:} \quad & \N = \{0, 1, 2, 3, \dots\} \\
+\text{Números Inteiros:} \quad & \Z = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\} \\
+\text{Números Racionais:} \quad & \Q = \{\dots, \frac{1}{2}, \frac{3}{4}, \frac{5}{6}, \dots\} \\
+\text{Números Reais:} \quad & \R = \{\N, \Z, \Q\} \\
+\text{Números Complexos:} \quad & \C = \{a + bi : i = \sqrt{-1} \land i^2 = -1\}
+\end{alignat*}
+
+\section{Definição Formal}
+1) Números Naturais (Von Neumann Construction):\\
+\newline
+$0 \coloneqq \varnothing$ \\
+$1 \coloneqq 0^+ = 0 \cup \{0\} = \{0\}$ \\
+$2 \coloneqq 1^+ = 1 \cup \{1\} = \{0,1\}$ \\
+$3 \coloneqq 2^+ = 2 \cup \{2\} = \{0,1,2\}$ \\
+\vdots \\
+$n + 1 \coloneqq n^+ = n \cup \{n\}$\\
+\newline
+2) Números Inteiros (Traditional development):\\
+
+\[ -x = \begin{cases}
+\psi(x), & \text{se } x \in P \\
+\psi^{-1}(x), & \text{se } x \in P^{-} \\
+0, & \text{se } x = 0
+\end{cases} \]
+
+3) Números Racionais:\\
+
+$\Q = \{\frac{p}{q} : p \in \Z, q \in \Z_{\neq 0} \}$\\
+
+4) Números Reais:\\
+
+$\N \subseteq \Z \subseteq \Q \subseteq \R$\\
+\footnote[1]{Não achei uma boa definição de números reais}
+
+5) Números Complexos:\\
+
+\text{Todo número que possa ser escrito na forma $a+bi$ sendo $i = \sqrt{-1} \land i^2=-1$}\\
+
+\section{Outros Conjuntos Númericos}
+
+$\B = \{0,1\} \longleftarrow$ Domínio Booleano\\ 
+$\mathbb{H} = \{a_0 + a_1 i_1 + a_2 i_2 + a_3 i_3\} \longleftarrow$ Quaternion\\
+$\mathbb{O} = \{a_0 + a_1 i_1 + \dots + a_7 i_7\} \longleftarrow$ Octonion\\
+$\mathbb{S} = \{a_0 + a_1 i_1 + \dots + a_{15} i_{15}\} \longleftarrow$ Sedenion\\
+$\mathbb{T} = \{a_0 + a_1 i_1 + \dots + a_{15} i_{31}\} \longleftarrow$ Trigintaduonions\\
+
+\section*{Fontes}
+\begin{enumerate}
+\item Site: \href{https://proofwiki.org/wiki/Definition:Natural_Numbers}{Definition: Natural Numbers}
+\item Site: \href{https://en.wikipedia.org/wiki/Integer#Traditional_development}{Integer - Traditional Development}
+\item Site: \href{https://proofwiki.org/wiki/Definition:Rational_Number}{Definition: Rational Number}
+\item Site: \href{https://en.wikipedia.org/wiki/Boolean_domain}{Boolean Domain}
+\item Video: \href{https://www.youtube.com/watch?v=Sa7XIcMej58}{O que existe além dos Complexos? (1/2)}
+\item Video: \href{https://www.youtube.com/watch?v=yGDHMYVGiPM}{O que existe além dos Complexos? (2/2)}
+\item Video: \href{https://www.youtube.com/watch?v=U3M25j9e4cw}{Axiomas de Peano}
+\end{enumerate}
+
+\end{document}
+
